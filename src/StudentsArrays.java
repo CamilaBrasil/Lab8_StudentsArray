@@ -9,7 +9,7 @@ public class StudentsArrays {
 		int userStudentRow = -1;
 		String userInfoChoice = null;
 		boolean infoInput;
-		String response = "n";
+		String response;
 		
 		System.out.println("Welcome to our Java class. ");
 		
@@ -18,8 +18,6 @@ public class StudentsArrays {
 
 		//Validation for the number.
 		userStudentRow = Validator.getInt(scan,"Which student would you like to learn more about? (enter a number 1-15) ", 1, 15) -1;
-		
-		//scan.nextLine();
 		
 		//Students name
 		String studentName = getInfo(userStudentRow, 0);
